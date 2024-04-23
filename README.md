@@ -1,11 +1,11 @@
 # T3gallery
 
-## TODO
+## TODOS
 
 - [x] Make it deploy (vercel)
-- [] Scaffold basic UI with mock data ([uploadthings](https://uploadthing.com/))
-- [] database (vercel postgres)
-- [] connect database to UI
+- [x] Scaffold basic UI with mock data ([uploadthings](https://uploadthing.com/))
+- [x] database (vercel postgres)
+- [x] connect database to UI
 - [] add Auth (w/ [clerk](https://clerk.com/))
 - [] add Image upload
 - [] error management (w/ [sentry](https://sentry.io/))
