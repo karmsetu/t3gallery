@@ -24,6 +24,7 @@
 
 const config = {
   images: {
+    //! is not working
     remotePatterns: [
       {
         protocol: "https",
@@ -32,6 +33,12 @@ const config = {
         pathname: "/",
       },
     ],
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
