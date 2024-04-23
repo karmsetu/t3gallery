@@ -1,4 +1,5 @@
 import { db } from "~/server/db";
+export const dynamic = "force-dynamic";
 
 /* eslint-disable @next/next/no-img-element */
 export default async function HomePage() {
