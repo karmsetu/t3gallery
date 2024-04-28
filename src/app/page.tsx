@@ -1,8 +1,9 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
+import Image from "next/image";
+import { object } from "zod";
 import { getMyImages } from "~/server/queries";
 export const dynamic = "force-dynamic";
 
-/* eslint-disable @next/next/no-img-element */
 export default async function HomePage() {
   const images = await getMyImages();
   const Images = () => {
@@ -11,7 +12,14 @@ export default async function HomePage() {
       <div className="flex flex-wrap justify-center gap-4 p-4">
         {images.map((image) => (
           <div className="flex h-48 w-48 flex-col" key={image.id}>
-            <img src={image.url} alt={image.name} />
+            {/* <img src={image.url} alt={image.name} /> */}
+            <Image
+              src={image.url}
+              alt={image.name}
+              // style={{ objectFit: "contain" }}
+              width={480}
+              height={480}
+            />
             <span className="">{image.name}</span>
           </div>
         ))}

@@ -8,7 +8,7 @@
 - [x] connect database to UI
 - [x] add Auth (w/ [clerk](https://clerk.com/))
 - [x] taint (server-only)
-- [] use next/Image component
+- [x] use next/Image component
 - [x] add Image upload
 - [] error management (w/ [sentry](https://sentry.io/))
 - [] routing/ image page (|| route)
