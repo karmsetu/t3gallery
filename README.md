@@ -11,7 +11,7 @@
 - [x] use next/Image component
 - [x] add Image upload
 - [x] error management (w/ [sentry](https://sentry.io/))
-- [] routing/ image page (|| route)
+- [x] routing/ image page (|| route)
 - [] delete button (w/ server actions)
 - [] analytics ([posthog](https://posthog.com/))
 - [] ratelimiting
