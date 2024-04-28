@@ -7,9 +7,9 @@
 - [x] database (vercel postgres)
 - [x] connect database to UI
 - [x] add Auth (w/ [clerk](https://clerk.com/))
-- [] taint (server-only)
+- [x] taint (server-only)
 - [] use next/Image component
-- [] add Image upload
+- [x] add Image upload
 - [] error management (w/ [sentry](https://sentry.io/))
 - [] routing/ image page (|| route)
 - [] delete button (w/ server actions)

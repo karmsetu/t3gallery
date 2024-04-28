@@ -1,13 +1,12 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
-import { db } from "~/server/db";
+import { getMyImages } from "~/server/queries";
 export const dynamic = "force-dynamic";
 
 /* eslint-disable @next/next/no-img-element */
 export default async function HomePage() {
-  const images = await db.query.images.findMany({
-    orderBy: (model, { desc }) => desc(model.id),
-  });
+  const images = await getMyImages();
   const Images = () => {
+    if (!images) return <div>Some error has occured</div>;
     return (
       <div className="flex flex-wrap justify-center gap-4 p-4">
         {images.map((image) => (
